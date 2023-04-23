@@ -48,7 +48,7 @@ class Producer(Thread):
             # Parse name, quantity & timeout
             product_name = product[0]
             product_quantity = product[1]
-            # time = product[2]
+            time = product[2]
 
             if product_quantity == 0:
                 return False
@@ -57,11 +57,14 @@ class Producer(Thread):
             while count != product_quantity:
                 # Send product to the marketplace's stock
                 result = self.marketplace.publish(producer_id, product_name)
-                sleep(int(product[2]))
+
+                # Timeout after publishing product
+                sleep(time)
+
+                # If publishing failed, retry after a delay
                 if not result:
                     sleep(self.republish_wait_time)
-                # else:
-                #     sleep(time)
+
                 count += 1
 
         return True

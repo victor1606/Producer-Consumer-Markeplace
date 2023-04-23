@@ -35,7 +35,10 @@ class Consumer(Thread):
         self.carts = carts
         self.marketplace = marketplace
         self.retry_wait_time = retry_wait_time
+
+        # Lock used for mutual exclusion while printing order
         self.print_lock = Lock()
+
         Thread.__init__(self, **kwargs)
 
     def run(self):

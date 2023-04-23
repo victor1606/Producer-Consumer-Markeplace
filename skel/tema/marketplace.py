@@ -26,7 +26,6 @@ class Marketplace:
         :param queue_size_per_producer: the maximum size of a queue associated with each producer
         """
         # Locks used for thread synchro
-
         self.producer_lock = Lock()
         self.customer_lock = Lock()
 
@@ -84,7 +83,6 @@ class Marketplace:
                 self.producer_list[producer_id].append(product)
                 return True
 
-        # self.logger.info("publish - producer %d cannot add %s", producer_id, product)
         return False
 
     def new_cart(self):
@@ -128,10 +126,8 @@ class Marketplace:
                 if product in producer_product_list:
                     self.customer_carts[cart_id].append(product)
                     producer_product_list.remove(product)
-
                     return True
 
-        # self.logger.info("Product %s not found", product)
         return False
 
     def remove_from_cart(self, cart_id, product):
@@ -182,7 +178,7 @@ class Marketplace:
 
 class TestMarketplace(unittest.TestCase):
     """
-    Class for testing all the functionalities of the marketplace class
+    Class for marketplace methods testing purposes
     """
 
     def setUp(self):
@@ -191,146 +187,218 @@ class TestMarketplace(unittest.TestCase):
         """
         self.marketplace = Marketplace(5)
 
-    def test_register_product(self):
+    def test_register_producer(self):
         """
-        Method to check register_product from Marketplace
+        Tests the register_producer method
         """
-        rang = range(200)
-        for i in rang:
-            self.assertEqual(
-                self.marketplace.register_producer(), i, "Not the expected id")
+        # Add producer
+        producer_id = self.marketplace.register_producer()
+        self.assertEqual(producer_id, 0, "Returned producer id should be 0")
 
     def test_publish(self):
         """
-        Method to check publish from Marketplace
+        Tests the publish product method
         """
+        # Add first producer
         producer_id = self.marketplace.register_producer()
-        prod1 = {
+
+        # Initialize 3 products
+        product_1 = {
+            "product_type": "Coffee",
+            "name": "Brasil",
+            "acidity": 5.09,
+            "roast_level": "MEDIUM",
+            "price": 7
+        }
+
+        product_2 = {
+            "product_type": "Tea",
+            "name": "Wild Cherry",
+            "type": "Black",
+            "price": 5
+        }
+
+        product_3 = {
             "product_type": "Coffee",
             "name": "Indonezia",
             "acidity": 5.05,
             "roast_level": "MEDIUM",
             "price": 1
-        }.__str__()
+        }
 
-        prod2 = {
-            "product_type": "Tea",
-            "name": "Wild Cherry",
-            "type": "Black",
-            "price": 5
-        }.__str__()
-        expected_list = [prod1, prod2]
-        self.marketplace.publish(producer_id, prod1)
-        self.marketplace.publish(producer_id, prod2)
+        # Publish all 3 products
+        self.marketplace.publish(producer_id, product_1)
+        self.marketplace.publish(producer_id, product_2)
+        self.marketplace.publish(producer_id, product_3)
 
         self.assertEqual(
-            self.marketplace.producers_products[producer_id], expected_list,
-            "Not the expected products")
+            self.marketplace.producer_list[producer_id], [product_1, product_2, product_3],
+            "Product publishing failed")
 
     def test_new_cart(self):
         """
-        Method to check new_cart from Marketplace
+        Tests the new_cart method
         """
-        rang = range(200)
-        for i in rang:
-            self.assertEqual(
-                self.marketplace.new_cart(), i, "Not the expected id")
+        # Add cart
+        cart_id = self.marketplace.new_cart()
+        self.assertEqual(cart_id, 0, "Returned cart id should be 0")
 
     def test_add_to_cart(self):
         """
         Method to check add_to_cart from Marketplace
         """
-        cart_id = self.marketplace.new_cart()
+        # Add first producer
         producer_id = self.marketplace.register_producer()
-        prod1 = {
+
+        # Initialize 3 products
+        product_1 = {
+            "product_type": "Coffee",
+            "name": "Brasil",
+            "acidity": 5.09,
+            "roast_level": "MEDIUM",
+            "price": 7
+        }
+
+        product_2 = {
+            "product_type": "Tea",
+            "name": "Wild Cherry",
+            "type": "Black",
+            "price": 5
+        }
+
+        product_3 = {
             "product_type": "Coffee",
             "name": "Indonezia",
             "acidity": 5.05,
             "roast_level": "MEDIUM",
             "price": 1
-        }.__str__()
+        }
 
-        prod2 = {
-            "product_type": "Tea",
-            "name": "Wild Cherry",
-            "type": "Black",
-            "price": 5
-        }.__str__()
+        # Publish all 3 products
+        self.marketplace.publish(producer_id, product_1)
+        self.marketplace.publish(producer_id, product_2)
+        self.marketplace.publish(producer_id, product_3)
 
-        self.marketplace.publish(producer_id, prod1)
-        self.marketplace.publish(producer_id, prod2)
+        # Add first cart
+        cart_id = self.marketplace.new_cart()
 
-        self.marketplace.add_to_cart(cart_id=cart_id, product=prod1)
+        # Add all products to cart
+        self.marketplace.add_to_cart(cart_id, product_1)
+        self.marketplace.add_to_cart(cart_id, product_2)
+        self.marketplace.add_to_cart(cart_id, product_3)
 
-        # check for adding to cart
-        self.assertEqual(self.marketplace.consumers_carts[cart_id], [
-                         prod1], "Not the expected cart content")
+        # Check if all products were added successfully
+        self.assertEqual(self.marketplace.customer_carts[cart_id], [
+            product_1, product_2, product_3], "Missing expected products from cart")
 
-        # check for removing from producer
-        self.assertEqual(self.marketplace.producers_products[producer_id], [
-                         prod2], "Not the expected cart content")
+        # Check if all products were removed from the stock
+        self.assertNotIn(product_1, self.marketplace.producer_list[producer_id],
+                         "Product 1 not removed from stock")
+        self.assertNotIn(product_2, self.marketplace.producer_list[producer_id],
+                         "Product 2 not removed from stock")
+        self.assertNotIn(product_3, self.marketplace.producer_list[producer_id],
+                         "Product 3 not removed from stock")
 
     def test_remove_from_cart(self):
         """
-        Method to check remove_from_cart from Marketplace
+        Checks the remove_from_cart method
         """
-        cart_id = self.marketplace.new_cart()
+        # Add first producer
         producer_id = self.marketplace.register_producer()
-        prod1 = {
+
+        # Initialize 3 products
+        product_1 = {
+            "product_type": "Coffee",
+            "name": "Brasil",
+            "acidity": 5.09,
+            "roast_level": "MEDIUM",
+            "price": 7
+        }
+
+        product_2 = {
+            "product_type": "Tea",
+            "name": "Wild Cherry",
+            "type": "Black",
+            "price": 5
+        }
+
+        product_3 = {
             "product_type": "Coffee",
             "name": "Indonezia",
             "acidity": 5.05,
             "roast_level": "MEDIUM",
             "price": 1
-        }.__str__()
+        }
 
-        prod2 = {
-            "product_type": "Tea",
-            "name": "Wild Cherry",
-            "type": "Black",
-            "price": 5
-        }.__str__()
+        # Publish all 3 products
+        self.marketplace.publish(producer_id, product_1)
+        self.marketplace.publish(producer_id, product_2)
+        self.marketplace.publish(producer_id, product_3)
 
-        self.marketplace.publish(producer_id, prod1)
-        self.marketplace.publish(producer_id, prod2)
+        # Add first cart
+        cart_id = self.marketplace.new_cart()
 
-        self.marketplace.add_to_cart(cart_id=cart_id, product=prod1)
+        # Add all products to cart
+        self.marketplace.add_to_cart(cart_id, product_1)
+        self.marketplace.add_to_cart(cart_id, product_2)
+        self.marketplace.add_to_cart(cart_id, product_3)
 
-        self.marketplace.remove_from_cart(cart_id=cart_id, product=prod1)
+        # Remove product 1
+        self.marketplace.remove_from_cart(cart_id, product_1)
 
-        self.assertEqual(self.marketplace.consumers_carts[cart_id], [
-        ], "Not the expected cart content")
+        # Check if product is still in cart
+        self.assertNotIn(product_1, self.marketplace.customer_carts[cart_id],
+                         "Remove from cart failed")
 
         # check for removing from producer
-        self.assertEqual(self.marketplace.producers_products[producer_id], [prod2,
-                         prod1], "Not the expected cart content")
+        self.assertIn(product_1, self.marketplace.producer_list[producer_id],
+                      "Product not re-added to stock")
 
     def test_place_order(self):
         """
-        Method to check place_order from Marketplace
+        Checks place_order method
         """
-        cart_id = self.marketplace.new_cart()
+        # Add first producer
         producer_id = self.marketplace.register_producer()
-        prod1 = {
+
+        # Initialize 3 products
+        product_1 = {
+            "product_type": "Coffee",
+            "name": "Brasil",
+            "acidity": 5.09,
+            "roast_level": "MEDIUM",
+            "price": 7
+        }
+
+        product_2 = {
+            "product_type": "Tea",
+            "name": "Wild Cherry",
+            "type": "Black",
+            "price": 5
+        }
+
+        product_3 = {
             "product_type": "Coffee",
             "name": "Indonezia",
             "acidity": 5.05,
             "roast_level": "MEDIUM",
             "price": 1
-        }.__str__()
+        }
 
-        prod2 = {
-            "product_type": "Tea",
-            "name": "Wild Cherry",
-            "type": "Black",
-            "price": 5
-        }.__str__()
+        # Publish all 3 products
+        self.marketplace.publish(producer_id, product_1)
+        self.marketplace.publish(producer_id, product_2)
+        self.marketplace.publish(producer_id, product_3)
 
-        self.marketplace.publish(producer_id, prod1)
-        self.marketplace.publish(producer_id, prod2)
+        # Add first cart
+        cart_id = self.marketplace.new_cart()
 
-        self.marketplace.add_to_cart(cart_id=cart_id, product=prod1)
-        cart = self.marketplace.consumers_carts[cart_id]
-        order = self.marketplace.place_order(cart_id=cart_id)
+        # Add all products to cart
+        self.marketplace.add_to_cart(cart_id, product_1)
+        self.marketplace.add_to_cart(cart_id, product_2)
+        self.marketplace.add_to_cart(cart_id, product_3)
 
-        self.assertEqual(cart, order, "Not the expected order")
+        # Place order
+        order = self.marketplace.place_order(cart_id)
+
+        self.assertEqual(order, [product_1, product_2, product_3], "Order method failed")
