@@ -44,6 +44,7 @@ class Marketplace:
         logging.Formatter.converter = gmtime
         self.logger = logging.getLogger()
 
+        # Log marketplace initialization
         self.logger.info("Marketplace constructor: queue_size_per_producer - %s",
                          queue_size_per_producer)
 
@@ -193,7 +194,7 @@ class TestMarketplace(unittest.TestCase):
         """
         # Add producer
         producer_id = self.marketplace.register_producer()
-        self.assertEqual(producer_id, 0, "Returned producer id should be 0")
+        self.assertEqual(producer_id, 1, "Returned producer id should be 1")
 
     def test_publish(self):
         """
@@ -201,7 +202,7 @@ class TestMarketplace(unittest.TestCase):
         """
         # Add first producer
         producer_id = self.marketplace.register_producer()
-
+        producer_id -= 1
         # Initialize 3 products
         product_1 = {
             "product_type": "Coffee",
@@ -241,7 +242,7 @@ class TestMarketplace(unittest.TestCase):
         """
         # Add cart
         cart_id = self.marketplace.new_cart()
-        self.assertEqual(cart_id, 0, "Returned cart id should be 0")
+        self.assertEqual(cart_id, 1, "Returned cart id should be 1")
 
     def test_add_to_cart(self):
         """
@@ -249,6 +250,7 @@ class TestMarketplace(unittest.TestCase):
         """
         # Add first producer
         producer_id = self.marketplace.register_producer()
+        producer_id -= 1
 
         # Initialize 3 products
         product_1 = {
@@ -288,7 +290,7 @@ class TestMarketplace(unittest.TestCase):
         self.marketplace.add_to_cart(cart_id, product_3)
 
         # Check if all products were added successfully
-        self.assertEqual(self.marketplace.customer_carts[cart_id], [
+        self.assertEqual(self.marketplace.customer_carts[cart_id - 1], [
             product_1, product_2, product_3], "Missing expected products from cart")
 
         # Check if all products were removed from the stock
@@ -305,6 +307,7 @@ class TestMarketplace(unittest.TestCase):
         """
         # Add first producer
         producer_id = self.marketplace.register_producer()
+        producer_id -= 1
 
         # Initialize 3 products
         product_1 = {
@@ -337,6 +340,7 @@ class TestMarketplace(unittest.TestCase):
 
         # Add first cart
         cart_id = self.marketplace.new_cart()
+        cart_id -= 1
 
         # Add all products to cart
         self.marketplace.add_to_cart(cart_id, product_1)
