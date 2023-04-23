@@ -78,4 +78,4 @@ class Consumer(Thread):
             # Print order
             with self.print_lock:
                 for product in order:
-                    print("%s bought %s" % (self.name, str(product)))
+                    print(f'{self.name} bought {str(product)}')

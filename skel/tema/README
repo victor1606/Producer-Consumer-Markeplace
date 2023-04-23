@@ -1,0 +1,54 @@
+Nume: Calugaritoiu Ion-Victor
+Grupă: 332CA
+
+Tema 1 - Marketplace
+
+Organizare
+
+Simularea functioneaza pe baza a 3 module: Producer, Consumer, Marketplace.
+In modulul Markeplace sunt specificate toate metodele necesare functionarii
+magazinului.
+Aici sunt stocati producatorii & produsele lor si cosurile de cumparaturi &
+produsele lor, folosind tablouri bidimensionale:
+    producer_list = [ [producer1_item1, producer1_item2, producer1_item3.. ],
+                    [ [producer2_item1, producer2_item2, producer2_item3.. ],
+                    [ [producer3_item1, producer3_item2, producer3_item3.. ],
+                    ...]
+
+    customer_carts = [ [cart1_item1, cart1_item2, cart1_item3.. ],
+                     [ [cart2_item1, cart2_item2, cart2_item3.. ],
+                     [ [cart3_item1, cart3_item2, cart3_item3.. ],
+                     ...]
+
+Sunt necesare urmatoarele Lock-uri:
+    - producer_lock: operatiile de inregistrare a unui nou prdoucator,
+        pentru publicarea unui nou produs;
+    -customer_lock: operatiile de inregistrare a unui nou cos de cumparaturi,
+        pentru adaugarea/inlaturarea unui produs din cos;
+
+Thread-urile de tip Producer furnizeaza produsele Coffee/Tea catre Marketplace,
+tinand cont de cantitatea specificata si de un delay de productie aferent
+fiecarui produs.
+
+Thread-urile de tip Consumer parseaza comenzile de intrare si apeleaza metodele
+corespunzatoare implementate in Markeplace. La finalul executiei tuturor
+comenzilor, se plaseaza comanda si printeaza rezultatul sau. La printare este
+necesar un mutex pentru a preveni intercalarea thread-urilor.
+
+
+Observatii aditionale:
+    - rezolvarea temei a fost foarte utila pentru aprofundarea structurilor
+    de date din python, a functionalitatilor de multithreading si
+     thread synchronization si a mecanismelor de logging si unittesting;
+    - intreg enuntul temei a fost implementat;
+    - am intampinat dificultati in procesul de debugging a testelor 7 si 10,
+    fiind necesar un mutex pentru a preveni intercalarea thread-urilor de tip
+    Consumer in timpul operatiei de printare a comenzilor;
+
+Git:
+    - https://github.com/victor1606/Producer-Consumer-Markeplace
+    - link fisier .git:
+
+Resurse utilizate:
+    - https://ocw.cs.pub.ro/courses/asc/laboratoare/02
+    - Stack Overflow
