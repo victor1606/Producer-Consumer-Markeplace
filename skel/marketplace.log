@@ -1,0 +1,243 @@
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 4 adds product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 5 adds product Tea(name='Pai Mu Tan', price=9, type='White')
+[2023-04-22T 23:03:01] INFO publish - producer 1 adds product Tea(name='Vietnam Oolong', price=10, type='Oolong')
+[2023-04-22T 23:03:01] INFO new_cart - returns id of new cart 571
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Tea(name='Jasmine', price=6, type='Green') to cart 412
+[2023-04-22T 23:03:01] INFO publish - producer 6 adds product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Tea(name='English Breakfast', price=2, type='Black')
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Tea(name='Pai Mu Tan', price=9, type='White') to cart 154
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Tea(name='Jasmine', price=6, type='Green') to cart 571
+[2023-04-22T 23:03:01] INFO publish - producer 22 adds product Coffee(name='Brasil', price=7, acidity=5.09, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 45 adds product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 37 adds product Tea(name='English Breakfast', price=2, type='Black')
+[2023-04-22T 23:03:01] INFO publish - producer 24 adds product Coffee(name='Brasil', price=7, acidity=5.09, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 50 adds product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 26 adds product Tea(name='White Peach', price=5, type='White')
+[2023-04-22T 23:03:01] INFO publish - producer 9 adds product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 48 adds product Tea(name='White Peach', price=5, type='White')
+[2023-04-22T 23:03:01] INFO publish - producer 25 adds product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 4 adds product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 5 adds product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 1 adds product Tea(name='White Peach', price=5, type='White')
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Tea(name='White Peach', price=5, type='White') to cart 572
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Tea(name='Jasmine', price=6, type='Green') to cart 412
+[2023-04-22T 23:03:01] INFO publish - producer 6 adds product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Tea(name='Jasmine', price=6, type='Green')
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Tea(name='Pai Mu Tan', price=9, type='White') to cart 154
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Tea(name='Jasmine', price=6, type='Green') to cart 571
+[2023-04-22T 23:03:01] INFO publish - producer 22 adds product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 24 adds product Coffee(name='Brasil', price=7, acidity=5.09, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Tea(name='White Peach', price=5, type='White')
+[2023-04-22T 23:03:01] INFO publish - producer 4 adds product Coffee(name='Brasil', price=7, acidity=5.09, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 5 adds product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 1 adds product Tea(name='Vietnam Oolong', price=10, type='Oolong')
+[2023-04-22T 23:03:01] INFO place_order - cart 572 was ordered
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Coffee(name='Brasil', price=7, acidity=5.09, roast_level='MEDIUM') to cart 412
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Tea(name='Jasmine', price=6, type='Green')
+[2023-04-22T 23:03:01] INFO place_order - cart 154 was ordered
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Tea(name='Jasmine', price=6, type='Green') to cart 571
+[2023-04-22T 23:03:01] INFO publish - producer 22 adds product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 18 adds product Tea(name='Pai Mu Tan', price=9, type='White')
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Tea(name='White Peach', price=5, type='White')
+[2023-04-22T 23:03:01] INFO publish - producer 4 adds product Coffee(name='Brasil', price=7, acidity=5.09, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 5 adds product Tea(name='English Breakfast', price=2, type='Black')
+[2023-04-22T 23:03:01] INFO publish - producer 1 adds product Tea(name='Vietnam Oolong', price=10, type='Oolong')
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Tea(name='Pai Mu Tan', price=9, type='White') to cart 412
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 38 adds product Coffee(name='Brasil', price=7, acidity=5.09, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO new_cart - returns id of new cart 572
+[2023-04-22T 23:03:01] INFO remove_from_cart - product Tea(name='Jasmine', price=6, type='Green') is removed from cart 571
+[2023-04-22T 23:03:01] INFO publish - producer 22 adds product Tea(name='English Breakfast', price=2, type='Black')
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 4 adds product Coffee(name='Brasil', price=7, acidity=5.09, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 19 adds product Tea(name='White Peach', price=5, type='White')
+[2023-04-22T 23:03:01] INFO publish - producer 5 adds product Tea(name='English Breakfast', price=2, type='Black')
+[2023-04-22T 23:03:01] INFO publish - producer 1 adds product Tea(name='White Peach', price=5, type='White')
+[2023-04-22T 23:03:01] INFO place_order - cart 412 was ordered
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Tea(name='Jasmine', price=6, type='Green') to cart 573
+[2023-04-22T 23:03:01] INFO remove_from_cart - product Tea(name='Jasmine', price=6, type='Green') is removed from cart 571
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 4 adds product Tea(name='White Peach', price=5, type='White')
+[2023-04-22T 23:03:01] INFO publish - producer 33 adds product Tea(name='Jasmine', price=6, type='Green')
+[2023-04-22T 23:03:01] INFO publish - producer 5 adds product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 1 adds product Tea(name='Vietnam Oolong', price=10, type='Oolong')
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Tea(name='Pai Mu Tan', price=9, type='White')
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Tea(name='Jasmine', price=6, type='Green') to cart 573
+[2023-04-22T 23:03:01] INFO remove_from_cart - product Tea(name='Jasmine', price=6, type='Green') is removed from cart 571
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Coffee(name='Brasil', price=7, acidity=5.09, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 4 adds product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 5 adds product Tea(name='Vietnam Oolong', price=10, type='Oolong')
+[2023-04-22T 23:03:01] INFO publish - producer 1 adds product Tea(name='Vietnam Oolong', price=10, type='Oolong')
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Tea(name='White Peach', price=5, type='White') to cart 573
+[2023-04-22T 23:03:01] INFO place_order - cart 571 was ordered
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Coffee(name='Brasil', price=7, acidity=5.09, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 4 adds product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 5 adds product Tea(name='Vietnam Oolong', price=10, type='Oolong')
+[2023-04-22T 23:03:01] INFO publish - producer 1 adds product Tea(name='White Peach', price=5, type='White')
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO place_order - cart 573 was ordered
+[2023-04-22T 23:03:01] INFO new_cart - returns id of new cart 573
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Coffee(name='Brasil', price=7, acidity=5.09, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 4 adds product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 5 adds product Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 1 adds product Tea(name='Vietnam Oolong', price=10, type='Oolong')
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO new_cart - returns id of new cart 573
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Coffee(name='Brasil', price=7, acidity=5.09, roast_level='MEDIUM') to cart 574
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 4 adds product Coffee(name='Brasil', price=7, acidity=5.09, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 5 adds product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 1 adds product Tea(name='Vietnam Oolong', price=10, type='Oolong')
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Tea(name='English Breakfast', price=2, type='Black')
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Tea(name='Vietnam Oolong', price=10, type='Oolong') to cart 575
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Coffee(name='Brasil', price=7, acidity=5.09, roast_level='MEDIUM') to cart 574
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 46 adds product Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 5 adds product Tea(name='Pai Mu Tan', price=9, type='White')
+[2023-04-22T 23:03:01] INFO publish - producer 34 adds product Tea(name='English Breakfast', price=2, type='Black')
+[2023-04-22T 23:03:01] INFO publish - producer 1 adds product Tea(name='White Peach', price=5, type='White')
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Tea(name='Jasmine', price=6, type='Green')
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Tea(name='Vietnam Oolong', price=10, type='Oolong') to cart 575
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Coffee(name='Brasil', price=7, acidity=5.09, roast_level='MEDIUM') to cart 574
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 5 adds product Tea(name='Pai Mu Tan', price=9, type='White')
+[2023-04-22T 23:03:01] INFO publish - producer 1 adds product Tea(name='Vietnam Oolong', price=10, type='Oolong')
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Tea(name='Jasmine', price=6, type='Green')
+[2023-04-22T 23:03:01] INFO remove_from_cart - product Tea(name='Vietnam Oolong', price=10, type='Oolong') is removed from cart 575
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Tea(name='White Peach', price=5, type='White') to cart 574
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 5 adds product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 1 adds product Tea(name='Vietnam Oolong', price=10, type='Oolong')
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO remove_from_cart - product Tea(name='Vietnam Oolong', price=10, type='Oolong') is removed from cart 575
+[2023-04-22T 23:03:01] INFO place_order - cart 574 was ordered
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Tea(name='Jasmine', price=6, type='Green')
+[2023-04-22T 23:03:01] INFO publish - producer 5 adds product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 1 adds product Tea(name='White Peach', price=5, type='White')
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO place_order - cart 575 was ordered
+[2023-04-22T 23:03:01] INFO new_cart - returns id of new cart 575
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Tea(name='English Breakfast', price=2, type='Black')
+[2023-04-22T 23:03:01] INFO publish - producer 5 adds product Tea(name='English Breakfast', price=2, type='Black')
+[2023-04-22T 23:03:01] INFO publish - producer 1 adds product Tea(name='Vietnam Oolong', price=10, type='Oolong')
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Tea(name='Pai Mu Tan', price=9, type='White')
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Tea(name='Pai Mu Tan', price=9, type='White') to cart 576
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Tea(name='English Breakfast', price=2, type='Black')
+[2023-04-22T 23:03:01] INFO publish - producer 5 adds product Tea(name='English Breakfast', price=2, type='Black')
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Tea(name='Pai Mu Tan', price=9, type='White') to cart 576
+[2023-04-22T 23:03:01] INFO publish - producer 7 adds product Coffee(name='Brasil', price=7, acidity=5.09, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Tea(name='English Breakfast', price=2, type='Black')
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Tea(name='Pai Mu Tan', price=9, type='White') to cart 576
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Tea(name='Vietnam Oolong', price=10, type='Oolong')
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Tea(name='Pai Mu Tan', price=9, type='White') to cart 576
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Tea(name='English Breakfast', price=2, type='Black')
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Tea(name='Pai Mu Tan', price=9, type='White') to cart 576
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Tea(name='Jasmine', price=6, type='Green')
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Coffee(name='Brasil', price=7, acidity=5.09, roast_level='MEDIUM') to cart 576
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Tea(name='White Peach', price=5, type='White')
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Tea(name='Jasmine', price=6, type='Green')
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM') to cart 576
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Tea(name='White Peach', price=5, type='White')
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO place_order - cart 576 was ordered
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Tea(name='Pai Mu Tan', price=9, type='White')
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Coffee(name='Brasil', price=7, acidity=5.09, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Coffee(name='Brasil', price=7, acidity=5.09, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Coffee(name='Brasil', price=7, acidity=5.09, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Tea(name='English Breakfast', price=2, type='Black')
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Tea(name='Jasmine', price=6, type='Green')
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 13 adds product Coffee(name='Brasil', price=7, acidity=5.09, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Tea(name='Jasmine', price=6, type='Green')
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Tea(name='Jasmine', price=6, type='Green') to cart 549
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Tea(name='Jasmine', price=6, type='Green')
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM') to cart 549
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Tea(name='English Breakfast', price=2, type='Black')
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM') to cart 549
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Tea(name='Pai Mu Tan', price=9, type='White')
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM') to cart 549
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM') to cart 549
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM') to cart 549
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO place_order - cart 549 was ordered
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Tea(name='English Breakfast', price=2, type='Black')
+[2023-04-22T 23:03:01] INFO publish - producer 3 adds product Tea(name='Jasmine', price=6, type='Green')
+[2023-04-22T 23:03:01] INFO publish - producer 17 adds product Tea(name='White Peach', price=5, type='White')
+[2023-04-22T 23:03:01] INFO publish - producer 28 adds product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 42 adds product Tea(name='English Breakfast', price=2, type='Black')
+[2023-04-22T 23:03:01] INFO publish - producer 21 adds product Tea(name='Jasmine', price=6, type='Green')
+[2023-04-22T 23:03:01] INFO publish - producer 26 adds product Tea(name='English Breakfast', price=2, type='Black')
+[2023-04-22T 23:03:01] INFO publish - producer 44 adds product Tea(name='White Peach', price=5, type='White')
+[2023-04-22T 23:03:01] INFO publish - producer 48 adds product Tea(name='English Breakfast', price=2, type='Black')
+[2023-04-22T 23:03:01] INFO publish - producer 31 adds product Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 32 adds product Coffee(name='Brasil', price=7, acidity=5.09, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 27 adds product Tea(name='Pai Mu Tan', price=9, type='White')
+[2023-04-22T 23:03:01] INFO publish - producer 27 adds product Tea(name='Pai Mu Tan', price=9, type='White')
+[2023-04-22T 23:03:01] INFO publish - producer 36 adds product Tea(name='Pai Mu Tan', price=9, type='White')
+[2023-04-22T 23:03:01] INFO publish - producer 19 adds product Tea(name='White Peach', price=5, type='White')
+[2023-04-22T 23:03:01] INFO publish - producer 9 adds product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 30 adds product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 46 adds product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 45 adds product Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 37 adds product Tea(name='English Breakfast', price=2, type='Black')
+[2023-04-22T 23:03:01] INFO publish - producer 26 adds product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 7 adds product Coffee(name='Brasil', price=7, acidity=5.09, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 20 adds product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 49 adds product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Tea(name='English Breakfast', price=2, type='Black')
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Tea(name='English Breakfast', price=2, type='Black')
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Tea(name='Vietnam Oolong', price=10, type='Oolong')
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 2 adds product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 18 adds product Tea(name='Pai Mu Tan', price=9, type='White')
+[2023-04-22T 23:03:01] INFO publish - producer 17 adds product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 40 adds product Tea(name='Jasmine', price=6, type='Green')
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Tea(name='Jasmine', price=6, type='Green') to cart 268
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Tea(name='Jasmine', price=6, type='Green') to cart 268
+[2023-04-22T 23:03:01] INFO place_order - cart 268 was ordered
+[2023-04-22T 23:03:01] INFO new_cart - returns id of new cart 576
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Tea(name='Jasmine', price=6, type='Green') to cart 577
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Tea(name='Jasmine', price=6, type='Green') to cart 577
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Tea(name='Jasmine', price=6, type='Green') to cart 577
+[2023-04-22T 23:03:01] INFO place_order - cart 577 was ordered
+[2023-04-22T 23:03:01] INFO new_cart - returns id of new cart 577
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM') to cart 578
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM') to cart 578
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM') to cart 578
+[2023-04-22T 23:03:01] INFO place_order - cart 578 was ordered
+[2023-04-22T 23:03:01] INFO publish - producer 34 adds product Tea(name='English Breakfast', price=2, type='Black')
+[2023-04-22T 23:03:01] INFO publish - producer 48 adds product Tea(name='English Breakfast', price=2, type='Black')
+[2023-04-22T 23:03:01] INFO publish - producer 26 adds product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO publish - producer 38 adds product Tea(name='Pai Mu Tan', price=9, type='White')
+[2023-04-22T 23:03:01] INFO publish - producer 35 adds product Tea(name='Pai Mu Tan', price=9, type='White')
+[2023-04-22T 23:03:01] INFO publish - producer 13 adds product Coffee(name='Brasil', price=7, acidity=5.09, roast_level='MEDIUM')
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Tea(name='Jasmine', price=6, type='Green') to cart 423
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM') to cart 423
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM') to cart 423
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM') to cart 423
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM') to cart 423
+[2023-04-22T 23:03:01] INFO add_to_cart - adds Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM') to cart 423
+[2023-04-22T 23:03:01] INFO place_order - cart 423 was ordered
+[2023-04-22T 23:03:01] INFO publish - producer 19 adds product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')

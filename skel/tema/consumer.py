@@ -6,7 +6,7 @@ Assignment 1
 March 2021
 """
 
-from threading import Thread
+from threading import Thread, Lock
 from time import sleep
 
 
@@ -35,6 +35,7 @@ class Consumer(Thread):
         self.carts = carts
         self.marketplace = marketplace
         self.retry_wait_time = retry_wait_time
+        self.print_lock = Lock()
         Thread.__init__(self, **kwargs)
 
     def run(self):
@@ -72,5 +73,6 @@ class Consumer(Thread):
             order = self.marketplace.place_order(cart_id)
 
             # Print order
-            for product in order:
-                print("%s bought %s" % (self.name, str(product)))
+            with self.print_lock:
+                for product in order:
+                    print("%s bought %s" % (self.name, str(product)))
