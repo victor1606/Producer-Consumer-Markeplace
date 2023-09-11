@@ -21,9 +21,9 @@ produsele lor, folosind tablouri bidimensionale:
                      ...]
 
 Sunt necesare urmatoarele Lock-uri:
-    - producer_lock: operatiile de inregistrare a unui nou prdoucator,
+    - producer_lock: operatiile de inregistrare a unui nou producator,
         pentru publicarea unui nou produs;
-    -customer_lock: operatiile de inregistrare a unui nou cos de cumparaturi,
+    - customer_lock: operatiile de inregistrare a unui nou cos de cumparaturi,
         pentru adaugarea/inlaturarea unui produs din cos;
 
 Thread-urile de tip Producer furnizeaza produsele Coffee/Tea catre Marketplace,
